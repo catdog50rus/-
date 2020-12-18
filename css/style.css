@@ -60,13 +60,9 @@ body {
 	animation: fall linear forwards;
 }
 
-.fa-snowflake::before{
-	position: absolute;
-	bottom: 20px;
-}
 @keyframes fall {
 	to {
-		transform: translateY(105vh);
+		transform: translateY(100vh);
 	}
 }
 
