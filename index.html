@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -13,45 +14,39 @@
 </head>
 
 <body>
-	<div class="container">
-		<h1>❄️ Новый Год наступит через: ❄️</h1>
-
-		<div class="countdown-container">
-			<div class="time">
-				<h1 id="days">00</h1>
-				<small>days</small>
+	<div class="container" id="snowplace">
+		<div class="countdown">
+			<div class="countdown--title">
+				<h1>❄️ Новый Год наступит через: ❄️</h1>
 			</div>
-			<div class="time">
-				<h1 id="hours">00</h1>
-				<small>hours</small>
-			</div>
-			<div class="time">
-				<h1 id="minutes">00</h1>
-				<small>minutes</small>
-			</div>
-			<div class="time">
-				<h1 id="seconds">00</h1>
-				<small>seconds</small>
+			<div class="countdown-container">
+				<div class="time">
+					<h1 id="days"></h1>
+					<small>days</small>
+				</div>
+				<div class="time">
+					<h1 id="hours"></h1>
+					<small>hours</small>
+				</div>
+				<div class="time">
+					<h1 id="minutes"></h1>
+					<small>minutes</small>
+				</div>
+				<div class="time">
+					<h1 id="seconds"></h1>
+					<small>seconds</small>
+				</div>
 			</div>
 		</div>
-
 		<div class="pictures">
 			<div class="pictures--inner">
-				<div>
-					<img class="christmastree" src="pictures/christmas_tree_PNG145.png" alt="christmastree" />
-				</div>
-				<div class="snowman">
-					<img class="snowman" src="pictures/snowman_PNG9933.png" alt="snowman" />
-				</div>
+				<img class="christmastree" src="pictures/christmas_tree_PNG145.png" alt="christmastree" />
+				<img class="snowman" src="pictures/snowman_PNG9933.png" alt="snowman" />
 			</div>
-
 		</div>
-
-
 	</div>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

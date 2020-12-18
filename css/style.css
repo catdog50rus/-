@@ -5,27 +5,46 @@
 body {
 	background-color: #323975;
 	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+	max-width: 100%;
+	max-height: 90vh;
+	font-size: xx-large;
+	padding-bottom: 5px;
 }
 .container{
-	max-height:100%;
-	min-width: 100%;
+	max-height: 100%;
+	width: 100%;
 	text-align: center;
 	font-family: 'Muli', sans-serif;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 
 }
+.countdown{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.countdown--title{
+	margin-top: 50px;
+}
 .countdown-container {
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;	
 	align-items: center;
 
 }
 .pictures{
-	justify-items: end;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 .pictures--inner{
 	display: flex;
-	margin-top: 60px;
 	justify-content: space-around;
 }
 .christmastree, .snowman{
@@ -41,6 +60,10 @@ body {
 	animation: fall linear forwards;
 }
 
+.fa-snowflake::before{
+	position: absolute;
+	bottom: 20px;
+}
 @keyframes fall {
 	to {
 		transform: translateY(105vh);
